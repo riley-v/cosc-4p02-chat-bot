@@ -1,1 +1,2 @@
-# cosc-4p02-chat-bot
+# COSC 4P02 Chat Bot
+
