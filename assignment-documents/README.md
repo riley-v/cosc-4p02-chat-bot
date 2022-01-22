@@ -1,5 +1,7 @@
-# COSC 4P02 Assignments
+# COSC 4P02 Assignment Documents
 
-[Project proposal](Project Proposal.pdf)
+## Project Proposal  
+The document can be found [here](project_proposal.pdf).
 
-Link to product backlog on Miro: https://miro.com/app/board/uXjVOVJiMLA=/
+## Product and Sprint Backlog 
+Product backlog on [Miro](https://miro.com/app/board/uXjVOVJiMLA=/).
