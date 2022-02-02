@@ -50,10 +50,44 @@ ul {
     font-weight: bold;
 }
 
-.chat {
+.opening {
     /* background-color: #a11c07; */
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 48px;
+    gap: 8px;
+    /* max-height: 300px; */
+    /* height: 100%; */
+}
+
+.opening-content {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: #a89b99c4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    max-width: 512px;
+    height: 13rem;
+    margin: auto;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.opening-box {
+    display: flex;
+}
+
+.chat {
+    /* background-color: #a11c07; */
+    width: 100%;
+    display: none;
     flex-direction: column;
     align-items: center;
     /* justify-content: center; */
