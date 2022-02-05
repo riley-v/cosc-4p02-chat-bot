@@ -30,14 +30,14 @@
         </div>
         <div class="chat">
             <div class="messages">
-                <div class="message-content">
-                    <p class="message-content-bot">Hello!</p>
+                <div id="message-content" class="message-content">
                     <p class="message-content-user">Hi!</p>
+                    <p class="message-content-bot">Hello!</p>
                 </div>
             </div>
             <div class="message-box">
-                <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
-                <button type="submit" class="message-submit">Send</button>
+                <textarea type="text" id="text" class="message-input" placeholder="Enter a message..."></textarea>
+                <button onClick="userQuery()" type="submit" class="message-submit">Send</button>
             </div>
         </div>
     </div>
@@ -46,6 +46,19 @@
         function hideOpening() {
             document.getElementsByClassName("opening")[0].style.display = "none";
             document.getElementsByClassName("chat")[0].style.display = "flex";
+        }
+        
+        function userQuery() {
+            var text = document.getElementById("text").value;
+            if (text != ""){
+                var newDiv = document.createElement("div");
+                var textnode = document.createTextNode(text);
+                newDiv.appendChild(textnode);
+                newDiv.classList.add('message-content-user');
+                document.getElementById("message-content").appendChild(newDiv);
+                var elem = document.getElementById('message-content');
+                elem.scrollTop = elem.scrollHeight;
+            }
         }
     </script>
 

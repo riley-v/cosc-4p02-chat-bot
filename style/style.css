@@ -61,6 +61,7 @@ ul {
     gap: 8px;
     /* max-height: 300px; */
     /* height: 100%; */
+    margin-top: 96px;
 }
 
 .opening-content {
@@ -90,8 +91,9 @@ ul {
     display: none;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     padding-top: 48px;
+    margin-top: 96px;
     gap: 8px;
     /* max-height: 300px; */
     /* height: 100%; */
@@ -101,7 +103,7 @@ ul {
     width: 100%;
     /* margin: auto; */
     padding: 0;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .message-content {
@@ -117,6 +119,41 @@ ul {
     max-width: 512px;
     height: 13rem;
     margin: auto;
+
+    /* background-color: lightblue; */
+  /* width: 110px; */
+  /* height: 110px; */
+    overflow: auto;
+}
+.scroll {
+    margin: 4px;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(46, 46, 46);
+    border-radius: 10px;
+  } 
+
+ ::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
 }
 
 .message-content-bot, .message-content-user {
@@ -129,7 +166,8 @@ ul {
     border-radius: 16px;
     margin-right: auto;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
+    max-width: 30%;
     /* width: auto; */
     /* text-align: left; */
 }
@@ -142,5 +180,36 @@ ul {
 }
 
 .message-box {
+    /* width: 100%; */
+    padding: 0;
     display: flex;
+    justify-content: center;
+}
+
+.message-input {
+  width: 400px;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 16px;
+  background-color: #a89b99c4;
+  font-size: 16px;
+  resize: none;
+  margin-right: 8px;
+}
+
+.message-submit {
+    height: 72px;
+    width: 72px;
+    padding:5px 15px;
+    background:#a89b99c4; 
+    border: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 50%;
+    cursor:pointer;
 }
