@@ -1,0 +1,288 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+}
+
+.header, .chat {
+    color: white;
+}
+
+.main-content {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #d12207, rgb(88, 25, 25));
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 16px;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    padding-right: 128px;
+    gap: 16px;
+}
+
+.heading {
+    padding-left: 128px;
+    font-size: 30px;
+    color: f9faf8;
+    font-weight: bold;
+}
+
+.opening {
+    /* background-color: #a11c07; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 48px;
+    gap: 8px;
+    /* max-height: 300px; */
+    /* height: 100%; */
+    margin-top: 96px;
+}
+
+.opening-content {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: #a89b99c4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    max-width: 512px;
+    height: 13rem;
+    margin: auto;
+    white-space: pre-line;
+    text-align: center;
+}
+
+.opening-box {
+    display: flex;
+}
+
+.chat {
+    /* background-color: #a11c07; */
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 48px;
+    margin-top: 96px;
+    gap: 8px;
+    /* max-height: 300px; */
+    /* height: 100%; */
+}
+
+.messages {
+    width: 100%;
+    /* margin: auto; */
+    padding: 0;
+    /* justify-content: center; */
+}
+
+.message-content {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: #a89b99c4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    max-width: 512px;
+    height: 13rem;
+    margin: auto;
+
+    /* background-color: lightblue; */
+  /* width: 110px; */
+  /* height: 110px; */
+    overflow: auto;
+}
+.scroll {
+    margin: 4px;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(46, 46, 46);
+    border-radius: 10px;
+  } 
+
+ ::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+.message-content-bot, .message-content-user {
+    /* display: inline-block; */
+    /* align-self: left; */
+    background-color: #c21a00;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 16px;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 8px;
+    max-width: 30%;
+    /* width: auto; */
+    /* text-align: left; */
+}
+
+.message-content-user {
+    /* text-align: right; */
+    /* align-self: right; */
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.message-box {
+    /* width: 100%; */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.message-input {
+  width: 400px;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 16px;
+  background-color: #a89b99c4;
+  font-size: 16px;
+  resize: none;
+  margin-right: 8px;
+}
+
+.message-submit {
+    height: 72px;
+    width: 72px;
+    padding:5px 15px;
+    background:#a89b99c4; 
+    border: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 50%;
+    cursor:pointer;
+}
+</style>
+
+<div class="main-content">
+  <div class="header">
+      <a href="#" class="heading">Brock Uni Chatbot</a>
+      <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#developers">Devs</a></li>
+      </ul>
+  </div>
+  <div class="opening">
+      <div class="opening-content">
+          <h2>Brock Uni Chatbot</h2>
+          The bot provides helpful information for Brock University students.  
+          Just type a question and it will answer you.  
+          The bot may not be suitable for children.  
+          The bot cannot understand you and does not mean what it 'says'.
+      </div>
+      <div class="opening-box">
+          <button onclick="hideOpening()" class="opening-hide">I Understand</button>
+      </div>
+  </div>
+  <div class="chat">
+      <div class="messages">
+          <div id="message-content" class="message-content">
+              <p class="message-content-user">Hi!</p>
+              <p class="message-content-bot">Hello!</p>
+          </div>
+      </div>
+      <div class="message-box">
+          <textarea type="text" id="text" class="message-input" placeholder="Enter a message..."></textarea>
+          <button onClick="userQuery()" type="submit" class="message-submit">Send</button>
+      </div>
+  </div>
+</div>
+
+<script>
+  function hideOpening() {
+      document.getElementsByClassName("opening")[0].style.display = "none";
+      document.getElementsByClassName("chat")[0].style.display = "flex";
+  }
+  
+  function userQuery() {
+      var text = document.getElementById("text").value;
+      if (text != ""){
+          var newDiv = document.createElement("div");
+          var textnode = document.createTextNode(text);
+          newDiv.appendChild(textnode);
+          newDiv.classList.add('message-content-user');
+          document.getElementById("message-content").appendChild(newDiv);
+          var elem = document.getElementById('message-content');
+          elem.scrollTop = elem.scrollHeight;
+      }
+  }
+</script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
