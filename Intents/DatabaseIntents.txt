@@ -1,0 +1,59 @@
+deplist
+-P
+What departments are there?
+What are the departments at Brock?
+-R
+The departments at Brock are Computer Science, Mathematics, and Physics.
+Brock's departments include Computer Science, Mathematics, and Physics.
+
+contactcomputerscience
+-P
+What is the contact information for the computer science department?
+Contact info for computer science?
+Who can I talk to from computer science?
+-R
+You can contact the Computer Science department at COSC@brocku.ca.
+Use this email to talk to someone from Computer Science: COSC@brocku.ca
+
+visitcomputerscience
+-P
+What is the link for the computer science web page?
+Where can I find the computer science department on the internet?
+-R
+Visit www.COSC.brocku.ca for more information on the Computer Science department.
+The Computer Science web page can be found at www.COSC.brocku.ca.
+
+contactmathematics
+-P
+What is the contact information for the mathematics department?
+Contact info for mathematics?
+Who can I talk to from mathematics?
+-R
+You can contact the Mathematics department at MATH@brocku.ca.
+Use this email to talk to someone from Mathematics: MATH@brocku.ca
+
+visitmathematics
+-P
+What is the link for the mathematics web page?
+Where can I find the mathematics department on the internet?
+-R
+Visit www.MATH.brocku.ca for more information on the Mathematics department.
+The Mathematics web page can be found at www.MATH.brocku.ca.
+
+contactphysics
+-P
+What is the contact information for the physics department?
+Contact info for physics?
+Who can I talk to from physics?
+-R
+You can contact the Physics department at PHYS@brocku.ca.
+Use this email to talk to someone from Physics: PHYS@brocku.ca
+
+visitphysics
+-P
+What is the link for the physics web page?
+Where can I find the physics department on the internet?
+-R
+Visit www.PHYS.brocku.ca for more information on the Physics department.
+The Physics web page can be found at www.PHYS.brocku.ca.
+

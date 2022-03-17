@@ -12,7 +12,7 @@ class ChatBot:
     def __init__(self):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-        with open('intents.json', 'r') as json_data:
+        with open('Intents/intents.json', 'r') as json_data:
             self.intents = json.load(json_data)
 
         FILE = "data.pth"
@@ -68,6 +68,7 @@ class ChatBot:
                 new_sentence = new_sentence + ' '
 
             sentence = new_sentence
+            #print(sentence)
 
         sentence = tokenize(sentence)
         X = bag_of_words(sentence, self.all_words)

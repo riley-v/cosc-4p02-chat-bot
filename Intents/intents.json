@@ -1,0 +1,158 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi",
+				"Hey",
+				"How are you",
+				"Is anyone there?",
+				"Hello",
+				"Good day"
+			],
+			"responses": [
+				"Hey :-)",
+				"Hello, thanks for visiting",
+				"Hi there, what can I do for you?",
+				"Hi there, how can I help"
+			]
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"Bye",
+				"See you later",
+				"Goodbye"
+			],
+			"responses": [
+				"See you later, thanks for visiting",
+				"Have a nice day",
+				"Bye! Come back again soon"
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"Thanks",
+				"Thank you",
+				"That's helpful",
+				"Thank's a lot!"
+			],
+			"responses": [
+				"Happy to help!",
+				"Any time!",
+				"My pleasure"
+			]
+		},
+		{
+			"tag": "funny",
+			"patterns": [
+				"Tell me a joke!",
+				"Tell me something funny!",
+				"Do you know a joke?"
+			],
+			"responses": [
+				"Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+				"What did the buffalo say when his son left for college? Bison."
+			]
+		},
+		{
+			"tag": "time",
+			"patterns": [
+				"What time is COSC 4P02?"
+			],
+			"responses": [
+				"The class is at 4:30 pm."
+			]
+		},
+		{
+			"tag": "id",
+			"patterns": [
+				"What are you?"
+			],
+			"responses": [
+				"A chatbot."
+			]
+		},
+		{
+			"tag": "deplist",
+			"patterns": [
+				"What departments are there?",
+				"What are the departments at Brock?"
+			],
+			"responses": [
+				"The departments at Brock are Computer Science, Mathematics, and Physics.",
+				"Brock's departments include Computer Science, Mathematics, and Physics."
+			]
+		},
+		{
+			"tag": "contactcomputerscience",
+			"patterns": [
+				"What is the contact information for the computer science department?",
+				"Contact info for computer science?",
+				"Who can I talk to from computer science?"
+			],
+			"responses": [
+				"You can contact the Computer Science department at COSC@brocku.ca.",
+				"Use this email to talk to someone from Computer Science: COSC@brocku.ca"
+			]
+		},
+		{
+			"tag": "visitcomputerscience",
+			"patterns": [
+				"What is the link for the computer science web page?",
+				"Where can I find the computer science department on the internet?"
+			],
+			"responses": [
+				"Visit www.COSC.brocku.ca for more information on the Computer Science department.",
+				"The Computer Science web page can be found at www.COSC.brocku.ca."
+			]
+		},
+		{
+			"tag": "contactmathematics",
+			"patterns": [
+				"What is the contact information for the mathematics department?",
+				"Contact info for mathematics?",
+				"Who can I talk to from mathematics?"
+			],
+			"responses": [
+				"You can contact the Mathematics department at MATH@brocku.ca.",
+				"Use this email to talk to someone from Mathematics: MATH@brocku.ca"
+			]
+		},
+		{
+			"tag": "visitmathematics",
+			"patterns": [
+				"What is the link for the mathematics web page?",
+				"Where can I find the mathematics department on the internet?"
+			],
+			"responses": [
+				"Visit www.MATH.brocku.ca for more information on the Mathematics department.",
+				"The Mathematics web page can be found at www.MATH.brocku.ca."
+			]
+		},
+		{
+			"tag": "contactphysics",
+			"patterns": [
+				"What is the contact information for the physics department?",
+				"Contact info for physics?",
+				"Who can I talk to from physics?"
+			],
+			"responses": [
+				"You can contact the Physics department at PHYS@brocku.ca.",
+				"Use this email to talk to someone from Physics: PHYS@brocku.ca"
+			]
+		},
+		{
+			"tag": "visitphysics",
+			"patterns": [
+				"What is the link for the physics web page?",
+				"Where can I find the physics department on the internet?"
+			],
+			"responses": [
+				"Visit www.PHYS.brocku.ca for more information on the Physics department.",
+				"The Physics web page can be found at www.PHYS.brocku.ca."
+			]
+		}
+	]
+}
