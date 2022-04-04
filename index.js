@@ -24,7 +24,7 @@ console.log(msg);
 
 //Connects to NLP python script
 const { spawn } = require('child_process');
-const childPython = spawn('python',['chat.py',msg]);
+const childPython = spawn('python',['newchat.py',msg]);
 
 //prints back response
 childPython.stdout.on('data', (data) => {

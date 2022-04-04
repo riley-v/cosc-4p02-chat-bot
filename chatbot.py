@@ -33,7 +33,7 @@ class ChatBot:
         contextualSpellCheck.add_to_pipe(self.nlp)
         
         # read in ignore words for nlp spell check
-        with open("IgnoreWords.txt") as f:
+        with open("Intents/IgnoreWords.txt") as f:
             self.ignore_words = f.read().splitlines()
             for i, word in enumerate(self.ignore_words):
                 self.ignore_words[i] = word.casefold()
