@@ -9,6 +9,8 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
+from datetime import datetime
+
 with open('Intents/intents.json', 'r', encoding="utf8") as f:
     intents = json.load(f)
 
@@ -54,8 +56,8 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 1000
-batch_size = 8
+num_epochs = 1
+batch_size = 400
 learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
@@ -93,6 +95,7 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 # Train the model
 for epoch in range(num_epochs):
+    print(datetime.now())
     for (words, labels) in train_loader:
         words = words.to(device)
         labels = labels.to(dtype=torch.long).to(device)
@@ -111,7 +114,7 @@ for epoch in range(num_epochs):
     if (epoch+1) % 100 == 0:
         print (f'Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}')
 
-
+print(datetime.now())
 print(f'final loss: {loss.item():.4f}')
 
 data = {

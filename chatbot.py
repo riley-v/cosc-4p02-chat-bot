@@ -12,11 +12,11 @@ class ChatBot:
     def __init__(self):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-        with open('Intents/intents.json', 'r') as json_data:
+        with open('Intents/intents.json', 'r', encoding="utf8") as json_data:
             self.intents = json.load(json_data)
 
         FILE = "data.pth"
-        data = torch.load(FILE)
+        data = torch.load(FILE, map_location=torch.device('cpu'))
 
         input_size = data["input_size"]
         hidden_size = data["hidden_size"]
