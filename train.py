@@ -9,7 +9,12 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
-with open('Intents/intents.json', 'r', encoding="utf8") as f:
+import subprocess
+
+subprocess.call(['java', '-jar', 'Intents/DatabaseToIntents.jar'])
+subprocess.call(['java', '-jar', 'Intents/JSONIntentsCreator.jar', 'Intents/BasicIntents.txt', 'Intents/DatabaseIntents.txt'])
+
+with open('Intents/patterns.json', 'r', encoding="latin-1") as f:
     intents = json.load(f)
 
 all_words = []
