@@ -11,13 +11,6 @@ public class DepartmentScraper extends WebScraper{
     private int ID;
     private Thread thread;
 
-    //User information
-//    private String user = "root";           //username to database
-//    private String pass = "Otoub44neq5";    //password to database
-//    private String browser = "webdriver.chrome.driver";     //preferred web browser
-//    //path to browser driver (obtained from selenium.dev)
-//    private String browserdriverpath = "C:\\Users\\dental\\IdeaProjects\\Web Scraper\\Lib\\chromedriver.exe";
-
     public DepartmentScraper(String link, int id) {
         super(link, id);
         website = link;
