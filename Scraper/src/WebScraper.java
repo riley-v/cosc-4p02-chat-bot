@@ -23,10 +23,10 @@ public class WebScraper implements Runnable{
     //User information
     public int year = 2021;
     public String user = "root";           //username to database
-    public String pass = "password";    //password to database
+    public String pass = "pass";           //password to database
     public String browser = "webdriver.chrome.driver";     //preferred web browser
     //path to browser driver (obtained from selenium.dev)
-    public String browserdriverpath = "C:\\Users\\dental\\IdeaProjects\\Web Scraper\\Lib\\chromedriver.exe";
+    public String browserdriverpath = "Lib/chromedriver.exe";
 
     public WebScraper(String link, int id){
         System.out.print("Web Scraper created");
@@ -101,7 +101,7 @@ public class WebScraper implements Runnable{
                 String query = "INSERT IGNORE INTO brock(Topic, PageLink) " +
                         "VALUES " + "(" + '"'+title+'"' + "," + '"'+url+'"' + ")";
                 //System.out.println(query);
-                //statement.executeUpdate(query);
+                statement.executeUpdate(query);
 
                 //System.out.println(title);
                 //info.add(doc.text());               //adds text of website to arraylist
@@ -118,6 +118,18 @@ public class WebScraper implements Runnable{
         }
         //If connection is not valid return null
         return null;
+    }
+
+    public Boolean checkConnection(String url) throws IOException {
+
+        Connection connection = Jsoup.connect(url);
+        Document doc = connection.get();
+        if (connection.response().statusCode() == 200) {
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public Thread getThread(){

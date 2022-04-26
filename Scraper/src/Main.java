@@ -76,7 +76,7 @@ public class Main {
         bots.add(new DepartmentScraper("https://brocku.ca/directory/a-z/" , 2));
 
         //link to fill exam table
-        //bots.add(new ExamScraper("https://brocku.ca/guides-and-timetables/timetables/?session=fw&type=ex&level=all" , 1));
+        bots.add(new ExamScraper("https://brocku.ca/guides-and-timetables/timetables/?session=fw&type=ex&level=all" , 1));
 
         //link to fill program tables
         bots.add(new ProgramScraper("https://brocku.ca/programs/" , 4));

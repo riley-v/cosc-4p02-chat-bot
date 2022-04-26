@@ -22,8 +22,6 @@ public class ExamScraper extends WebScraper{
         website = link;
         ID = id;
 
-//        thread = new Thread((this));
-//        thread.start();
     }
 
     @Override
