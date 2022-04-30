@@ -45,8 +45,8 @@ Download this repository.
 Navigate to the *nlp* folder.  
 
 ### 2) Install Node
-Installation packages can be found at https://nodejs.dev/download/.  
-Skip this step if you are not installing the full Node JS app.  
+Skip this step if you are not installing the full Node JS app. 
+Installation packages can be found at https://nodejs.dev/download/.   
 
 ### 3) Install Necessary Python Libraries
 First make sure Python 3.9 is your default Python installation.  
