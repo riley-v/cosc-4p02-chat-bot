@@ -1,5 +1,15 @@
 package ToJSON;
 
+/**
+ * This class is the main class of the package. This package can be treated as a black box
+ * function. As long as the files used as arguments are in the format of BasicIntents.txt,
+ * it will output them into two JSON files. One is for the patterns used during training,
+ * and one for the responses used during chatbot conversations.
+ *
+ * @author The Aftermath of Stack Overflow
+ *
+ */
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;

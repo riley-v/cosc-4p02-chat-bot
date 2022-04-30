@@ -1,5 +1,9 @@
 package ToJSON;
 
+/**
+ * This class does the actual JSON formatting based on the given input
+ */
+
 import java.util.ArrayList;
 
 public class JSONConverter {

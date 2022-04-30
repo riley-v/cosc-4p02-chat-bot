@@ -1,3 +1,13 @@
+/**
+ * This class is the main class of the package. This package is responsible for getting
+ * the information from the database, formatting it as intents, and storing it in a file.
+ * All of the functionality is in the Main class, the other classes are just containers
+ * to hold data. First the data is extracted from the database. Then, the data is formatted
+ * and stored in a file. Finally the list of ignore words (the course codes) is created.
+ *
+ * @author The Aftermath of Stack Overflow
+ */
+
 import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.Session;

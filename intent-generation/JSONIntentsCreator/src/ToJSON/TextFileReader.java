@@ -1,5 +1,9 @@
 package ToJSON;
 
+/**
+ * This class parses a ".txt" file in the format of BasicIntents.txt to find the tags, patterns, and responses
+ */
+
 import java.io.*;
 import java.util.ArrayList;
 

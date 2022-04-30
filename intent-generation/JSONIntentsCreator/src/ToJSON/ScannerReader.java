@@ -1,4 +1,8 @@
 /**
+ * The old reader that cannot handle large files.
+ */
+
+/**
 package ToJSON;
 
 import java.io.BufferedReader;

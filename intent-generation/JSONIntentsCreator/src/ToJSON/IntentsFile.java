@@ -1,5 +1,9 @@
 package ToJSON;
 
+/**
+ * This class prints the given input out to a file.
+ */
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
