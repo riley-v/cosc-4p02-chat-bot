@@ -367,6 +367,8 @@ public class CourseScraper extends WebScraper{
         System.setProperty(browser,browserdriverpath);
         ChromeOptions option = new ChromeOptions();
         option.addArguments("headless");    //prevents opening of browser
+        //add WebDriverManager as dependency (https://bonigarcia.dev/webdrivermanager/) to update chrome driver
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver(option);
         driver.get(url);
         //If webpage has a clickable table, it clicks each row in table
