@@ -68,7 +68,6 @@ class ChatBot:
                 new_sentence = new_sentence + ' '
 
             sentence = new_sentence
-            #print(sentence)
 
         sentence = tokenize(sentence)
         X = bag_of_words(sentence, self.all_words)
