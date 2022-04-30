@@ -74,6 +74,19 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+If the installation process fails because *pip* cannot find the *en-core-web-sm* model, delete that line from the *requirements.txt* file and run the above command again. Then, run 
+```
+python -m spacy download en_core_web_sm
+```
+
+##### Install Punkt
+Finally, install ```nltk.tokenize.punkt``` by running
+```
+$ python
+>>> import nltk
+>>> nltk.download('punkt')
+```
+
 ### 4) Run the Code
 ##### If you are running the full Node website:
 ```
@@ -88,7 +101,7 @@ python chat.py question
 where *question* is the question you would like to get a response to from the chatbot.
 
 ## Neural Network Training
-To train the network, start by following the instruction to set up the project. You do not need to set up node to train the network.
+To train the network, start by following the instruction to set up the project. You do not need to install Node JS to train the network.
 
 Next, run
 ```
