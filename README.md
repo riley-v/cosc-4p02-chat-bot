@@ -3,6 +3,7 @@
 ## Table of Contents
 1. Project Information
 2. Project Setup
+3. Neural Network Training
 
 ## Project Information
 
@@ -85,3 +86,15 @@ Then go to ```localhost:xxxx``` in a web browser, where *xxxx* is the port numbe
 python chat.py question
 ```
 where *question* is the question you would like to get a response to from the chatbot.
+
+## Neural Network Training
+To train the network, start by following the instruction to set up the project. You do not need to set up node to train the network.
+
+Next, run
+```
+python train.py
+```
+
+This will generate the proper intent files and train the model, creating a new *data.pth*, which stores the neural network information. On a GPU accelerated system, the process will take around 1 hour to complete.
+
+This process should be done each time the web scraper is run in order to keep the information up to date.
